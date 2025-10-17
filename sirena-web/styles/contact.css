@@ -1,0 +1,224 @@
+.background-contact {
+    background-image: url('../imgs/other/BG-Contact.png');
+}
+
+.contact-about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-about-buttons {
+    margin-top: 12px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.contact-values {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-value {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-value-title {
+    text-transform: uppercase;
+}
+
+.contact-value-text {
+    color: var(--color-gray-600);
+}
+
+.contact-services {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-service {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    padding: 20px;
+
+    background: var(--color-gray-900);
+
+    border-radius: 12px;
+}
+
+.contact-service-icon {
+    height: 40px;
+}
+
+.contact-service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+/* Список вакансий */
+.vacancies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 160px;
+}
+
+/* Элемент вакансии */
+.vacancy-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    border-bottom: 1px solid var(--color-stroke-gray);
+}
+
+.vacancy-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Заголовок вакансии */
+.vacancy-title {
+    color: var(--color-white);
+}
+
+/* Описание вакансии */
+.vacancy-description {
+    color: var(--color-gray-400);
+    font-family: var(--font-text);
+    font-size: var(--font-size-additional-text);
+    line-height: 16px;
+    letter-spacing: var(--font-letter-spacing-medium);
+    margin-bottom: 12px;
+}
+
+/* Теги вакансии */
+.vacancy-tags {
+    margin-top: 12px;
+}
+
+/* Карточка контакта */
+.contact-card {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    padding: 24px;
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid var(--color-stroke-gray);
+    background: radial-gradient(215.21% 237.65% at 50.11% 237.65%, #80F 0%, #FFF 100%);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    
+    /* Теперь позиционируется относительно wrapper, а не content */
+    z-index: 10;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-title {
+    font-family: var(--font-semibold);
+    font-size: var(--font-size-medium);
+    line-height: var(--font-line-height-medium);
+    letter-spacing: var(--font-letter-spacing-medium);
+    color: var(--color-white);
+    margin-bottom: 6px;
+}
+
+.contact-description {
+    color: var(--color-black);
+    font-family: var(--font-regular-text);
+    font-size: var(--font-size-text);
+    line-height: var(--font-line-height-text);
+}
+
+/* Job Position */
+
+.job-position-title {
+    margin-top: 52px;
+    margin-bottom: 0px;
+}
+
+.job-position-back-button {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+}
+
+.job-position-about-button {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    z-index: 10;
+}
+
+.job-position-content {
+    display: flex;  
+    flex-direction: column;
+    gap: 16px;
+
+    color: var(--color-gray-300);
+}
+
+.job-position-tags {
+    font-size: var(--font-size-text);
+}
+
+.job-position-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.job-position-item {
+    margin-left: 16px;
+}
+
+@media (max-width: 780px) {
+    .contact-card {
+        left: 12px;
+        width: calc(100% - 24px);
+        bottom: 80px;
+
+        padding: 20px;
+    }
+
+    .vacancy-item {
+        gap: 20px;
+    }
+
+    .job-position-back-button {
+        position: absolute;
+        top: 72px;
+        left: 12px;
+        z-index: 10;
+    }
+    
+    .job-position-about-button {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        z-index: 10;
+    }
+}

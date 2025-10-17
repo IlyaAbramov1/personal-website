@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Илья Абрамов</title>
+
+    <link rel="icon" type="image/png" href="/imgs/favicon.svg">
+    <meta property="og:title" content="Илья Абрамов">
+    <meta property="og:description" content="Дизайнер веба, графики и 2D моушна">
+    <meta property="og:image" content="/imgs/Sharing Banner.webp">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Илья Абрамов">
+    <meta name="twitter:description" content="Дизайнер веба, графики и 2D моушна.">
+    <meta name="twitter:image" content="/imgs/Sharing Banner.webp">
+       
+    <link rel="stylesheet" href="/styles/global.css?v=1.14">
+    <link rel="stylesheet" href="/styles/article.css?v=1.26">
+</head>
+
+<body>
+    <script src="/scripts/script.js?v=1.9"></script>
+    <script src="/scripts/script-animation-in-web.js?v=2.4"></script>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <a href="/">
+                    <img src="/imgs/Logo.svg" alt="Logo" class="header-logo">
+                </a>
+                <div class="themeToggle" id="themeToggle">
+                    <div class="activeState">Светло</div>
+                    <div>/</div>
+                    <div>Тёмно</div>
+                </div>
+            </div>
+            <div class="header-text">
+                <p>Что делает анимацию правильной?</p>
+                <p class="header-text-subtitle"><span class="list-new">Новое</span> Перевод | 2025</p>
+                <p class="header-text-description">Статья из курса Эмиля Ковальски о создании и программировании анимаций для веба. Курс закрытый, но эту статью Эмиль выложил в открытый доступ. Спасибо ему за это.</p>
+            </div>
+            <nav class="header-nav">
+                <a href="/" class="link">←На главную</a>,
+                <a href="https://www.animations.dev/" class="link" target="_blank">Курс Эмиля↗</a>,
+                <a href="https://emilkowal.ski/" class="link" target="_blank">Сайт Эмиля↗</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Article -->
+
+    <div class="main-content">
+        <section class="regular-container">
+            <div class="article-list">
+                <div class="article-paragraph">
+                    <h1>Что делает анимацию правильной?</h1>
+                    <p>Уверен, вы видели анимацию, на которую вы реагировали фразой «Вау, это выглядит сочно!».  Но как объяснить то, почему нам так кажется? Что делает эту анимацию настолько цепляющей? В этом уроке мы разберем, почему одна анимация кажется нам красивой, а другая – нет.</p>
+                </div>
+
+                <div class="article-paragraph">
+                    <h2>В чем разница?</h2>
+                    <p>Нравится ли вам эта анимация?</p>
+                    <div style="position: relative; padding-top: 80%; width: 100%"><iframe class="article-video" src="https://kinescope.io/embed/5B5p4QoKt4tDZ4TjBdSC8E" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe></div>
+                    <p>Наверняка нет.</p>
+                    <p>А эта?</p>
+                    <div style="position: relative; padding-top: 80%; width: 100%"><iframe class="article-video" src="https://kinescope.io/embed/7cyfi4Hx2DgEkW4TGyAtzr" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe></div>
+                    <p>Лучше, правда?</p>
+                    <p>Во втором примере используются изинги, которые и помогают анимации выглядеть натуральнее.</p>
+                    <p>Во второй анимации используются линейные типы изингов. Они совсем не кажутся нам живыми, а скорее роботизированными, ведь в нашем окружающем мире редко что движется с постоянной скоростью. Этой анимации недостает импульса, поэтому она кажется нам неживой.</p>
+                    <p>Анимация кажется нам верной, когда она подражает движению окружающего нас мира. Она выглядит натурально только в том случае, если мы не удивляемся тому, как она выглядит, ведь мы уже видели что-то подобное.</p>
+                    <div class="article-quote">
+                        <p class="quote-text">Неоспоримо верно подражать природе. Ведь она уже давно решила те вопросы, над которыми мы бьемся сейчас.</p>
+                        <p class="quote-subtitle">Пол Грэхем, <a href="https://paulgraham.com/taste.html" class="link" target="_blank">Чувство вкуса творцов↗</a></p>
+                    </div>
+                    <p>Теперь посмотрим на следующие две кнопки:</p>
+
+                    <div class="block-with-interaction" style="height: 240px;">
+                        <div class="object-and-checkmark">
+                            <button class="copy-example-button sharp-transition" id="sharpButton">
+                                <img src="/imgs/icons/b-copy.svg" alt="Copy" class="icon-copy visible">
+                                <img src="/imgs/icons/b-fill-checkmark.svg" alt="Checkmark" class="icon-checkmark hidden">
+                            </button>
+                            <img src="/imgs/icons/b-fill-cross.svg" alt="Checkmark">
+                        </div>
+                        <div class="object-and-checkmark">
+                            <button class="copy-example-button blur-transition" id="blurButton">
+                                <img src="/imgs/icons/b-copy.svg" alt="Copy" class="icon-copy visible">
+                                <img src="/imgs/icons/b-fill-checkmark.svg" alt="Checkmark" class="icon-checkmark hidden">
+                            </button>
+                            <img src="/imgs/icons/blue-fill-checkmark.svg" alt="Checkmark">
+                        </div>
+                    </div>
+
+                    <p>Правая кнопка выглядит лучше за счёт небольшого блюра, который заполняет визуальный пробел между сменой двух иконок. Без него наш глаз отчетливо видит два различных объекта, и это выглядит ненатурально. Блюр обманывает наш глаз, объединяя две иконки единым мягким переходом.</p>
+                    <p>Apple поняли этот принцип очень хорошо. Например, когда мы используем Dynamic Island, его движение напоминает живой организм. Столь мелкие детали и делают интерфейс iOS натуральным.</p>
+                    <div style="position: relative; padding-top: 64%; width: 100%"><iframe class="article-video" src="https://kinescope.io/embed/9CPJXJ1b9vEixVkes1KV6e" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe></div>
+                    <p>Тщательный выбор свойств анимаций – изингинг, продолжительность, свойства объекта – помогают придавать нашим анимациям живость и натуральность. Решение о каждом из них и определяет то, какие эмоции вызывает интерфейс и продукт в целом.</p>
+                </div>
+
+                <div class="article-paragraph">
+                    <h2>Цель</h2>
+                    <p>То, что анимация может улучшить пользовательский опыт, ещё не означает, что мы должны анимировать каждый элемент интерфейса. Анимация должна быть уместной для того или иного сценария. Чем больше мы добавляем анимаций, тем меньшей ценностью они обладают.</p>
+                    <p>Подумайте о том, какую цель ставит перед собой пользователь и как часто на пути к ней он видит анимацию. Ховер на второй колонке в нижестоящем примере выглядит, словно это демо-версия. Однако если пользователь наводиться на этот объект сотни раз за день, даже анимация в 200 милисекунд может вызвать разграждение.</p>
+
+                    <div class="block-with-interaction" style="height: 360px;">
+                        <div class="object-and-checkmark">
+                            <div class="list-hover-example">
+                                <div class="list-item-smooth" style="border-radius: 8px 8px 0 0;"></div>
+                                <div class="list-item-smooth"></div>
+                                <div class="list-item-smooth"></div>
+                                <div class="list-item-smooth"></div>
+                                <div class="list-item-smooth"></div>
+                                <div class="list-item-smooth" style="border-radius: 0 0 8px 8px;"></div>
+                            </div>
+                            <img src="/imgs/icons/b-fill-cross.svg" alt="Checkmark">
+                        </div>
+                        <div class="object-and-checkmark">
+                            <div class="list-hover-example">
+                                <div class="list-item-init" style="border-radius: 8px 8px 0 0;"></div>
+                                <div class="list-item-init"></div>
+                                <div class="list-item-init"></div>
+                                <div class="list-item-init"></div>
+                                <div class="list-item-init"></div>
+                                <div class="list-item-init" style="border-radius: 0 0 8px 8px;"></div>
+                            </div>
+                            <img src="/imgs/icons/blue-fill-checkmark.svg" alt="Checkmark">
+                        </div>
+                    </div>
+
+                    <p>Распространенная ошибка новичка – анимировать больше, чем нужно, чтобы впечатлить пользователя. Чаще всего, заходя на  продукт, юзер имеет определённую цель. И он не ожидает быть впечатленными, ему лишь нужно использовать продукт по назначению.</p>
+                    <p>Вот почему добавление анимаций может привести к обратному эффекту. Вместо того, чтобы улучшать пользовательский опыт, мы вредим ему.</p>
+                    <p>Анимация кажется уместной только тогда, когда и вы, и пользователь не удивлены её существованию.</p>
+                    <p>К примеру, небольшое смещение объектов в dropdown-элементе может выглядеть круто, когда мы кликаем на неё в первый раз. Но представьте, насколько быстрее пользователь может взаимодействовать с этим объектом, если у него не будет подобной микро-анимации.</p>
+                    <div class="block-with-interaction" style="height: 360px; align-items: flex-end;">
+                        <div class="object-and-checkmark" style="padding-top: 80px; width: 200px;">
+                            <div class="droplist" id="droplistWithItems" style="display: none;">
+                                <div class="droplist-item" style="--index: 1;">
+                                    <p>Вильям Кларк</p>
+                                    <p style="color: var(--gray-400);">contact@example.com</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 2;">
+                                    <p>Дашборд</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 3;">
+                                    <p>Мои интеграции</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 4;">
+                                    <p>Настройки аккаунта</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 5;">
+                                    <p>Выйти</p>
+                                </div>
+                            </div>
+                            <button class="text-button-to-open" id="droplistButtonWithItems">
+                                Открыть
+                            </button>
+                            <img src="/imgs/icons/b-fill-cross.svg" alt="Checkmark">
+                        </div>
+                        <div class="object-and-checkmark" style="padding-top: 80px; width: 200px;">
+                            <div class="droplist" id="droplistNoItems" style="display: none;">
+                                <div class="droplist-item" style="--index: 1;">
+                                    <p>Вильям Кларк</p>
+                                    <p style="color: var(--gray-400);">contact@example.com</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 2;">
+                                    <p>Дашборд</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 3;">
+                                    <p>Мои интеграции</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 4;">
+                                    <p>Настройки аккаунта</p>
+                                </div>
+                                <div class="droplist-item" style="--index: 5;">
+                                    <p>Выйти</p>
+                                </div>
+                            </div>
+                            <button class="text-button-to-open" id="droplistButtonNoItems">
+                                Открыть
+                            </button>
+                            <img src="/imgs/icons/blue-fill-checkmark.svg" alt="Checkmark">
+                        </div>
+                    </div>
+
+                    <p>Ниже, в компоненте перемещения в корзину, при удалении картинки нам требуется UI-элемент для подтверждения удаления. Мы можем сделать этот момент запоминающимся с помощью анимаций.</p>
+
+                    <div class="block-with-interaction" style="height: 480px;">
+                        <div class="can can-bottom" id="canBottom">
+                            <div class="can-illustration-container">
+                                <img src="/imgs/articles/animation_in_web/Bottom.svg" alt="Can">
+                            </div>
+                        </div>
+                        <div class="can can-top" id="canTop">
+                            <div class="can-illustration-container">
+                                <img src="/imgs/articles/animation_in_web/Top.svg" alt="Can">
+                            </div>
+                        </div>
+                        <div class="images-in-can">
+                            <div class="image-and-checkmark">
+                                <img src="/imgs/articles/animation_in_web/desert.webp" alt="Checkmark" class="image-in-can" id="imageToTrash">
+                                <div class="checkmark-container">
+                                    <img src="/imgs/icons/b-fill-checkmark.svg" alt="Checkmark" class="checkmark-in-image checkmark-animation">
+                                </div>
+                            </div>
+                            <div class="image-and-checkmark">
+                                <img src="/imgs/articles/animation_in_web/japan.webp" alt="Checkmark" class="image-in-can">
+                                <div class="checkmark-container">
+                                    <img src="/imgs/icons/b-fill-checkmark.svg" alt="Checkmark" class="checkmark-in-image checkmark-animation">
+                                </div>
+                            </div>
+                            <div class="image-and-checkmark">
+                                <img src="/imgs/articles/animation_in_web/jungle.webp" alt="Checkmark" class="image-in-can">
+                                <div class="checkmark-container">
+                                    <img src="/imgs/icons/b-fill-checkmark.svg" alt="Checkmark" class="checkmark-in-image checkmark-animation">
+                                </div>
+                            </div>
+                            <div class="image-and-checkmark">
+                                <img src="/imgs/articles/animation_in_web/new-york.webp" alt="Checkmark" class="image-in-can">
+                                <div class="checkmark-container">
+                                    <img src="/imgs/icons/b-fill-checkmark.svg" alt="Checkmark" class="checkmark-in-image checkmark-animation">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button-to-trash" id="buttonToTrash">
+                            <img src="/imgs/icons/b-trash.svg" alt="Checkmark">
+                            <p>Удалить</p>
+                        </div>
+                    </div>
+                
+                <div class="article-paragraph">
+                    <h2>Вкус</h2>
+                    <p>Качественная анимация, как и качественный дизайн, подчиняется набору правил – графики изингов, продолжительность и цель.</p>
+                    <p>Изучение этих правил даст хороший старт, но чтобы стать действительно сильным в анимациях, необходимо сформировать вкус. И не смотря на мнение некоторых людей, вкус – это не качество, дающееся с рождением. Ему можно обучиться.</p>
+                    <div class="article-quote">
+                        <p class="quote-text">Если бы вкус был у каждого, все были бы идеальными.</p>
+                        <p class="quote-subtitle">Пол Грэхем, <a href="https://paulgraham.com/taste.html" class="link" target="_blank">Чувство вкуса творцов↗</a></p>
+                    </div>
+                    <p>Когда вкус будет сформирован, вы будете различать хорошие и плохие анимации. В процессе у вас также сформируются ориентиры и референсы, на которые можно опираться в работе.</p>
+                </div>
+
+                <div class="article-paragraph">
+                    <h2>Конспект статьи</h2>
+                    <p>Анимация правильная, когда:</p>
+                    <ul>
+                        <li>Она выглядит натурально;</li>
+                        <li>У неё есть цель;</li>
+                        <li>Она сделана со вкусом.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer ">
+        <div class="footer-content">
+            <div class="footer-info">
+                Designed and developed <br> by Ilya Abramov. October 2025
+            </div>
+            <button class="buttonSecondary scroll-to-top" id="scrollToTop">Наверх↑</button>
+        </div>
+    </footer>
+</body>

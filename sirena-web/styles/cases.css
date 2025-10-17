@@ -1,0 +1,132 @@
+.background-cases {
+    background-image: url('../imgs/other/BG-cases.png');
+}
+
+.cases-page {
+    max-width: 1400px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 80px 40px 120px 40px;
+}
+
+/* Cases Grid Layout */
+.cases-grid {
+    display: grid;
+    width: 100%;
+    max-width: 14000px;
+    margin: 0 auto;
+    gap: 56px 60px; /* вертикальный / горизонтальный */
+    
+    /* По умолчанию 3 колонки */
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+    /* Автоматическое масштабирование строк */
+    grid-auto-rows: max-content;
+}
+
+.cases-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    /* Адаптивность */
+    width: 100%;
+    min-width: 0; /* Позволяет элементам сжиматься */
+    
+    /* Выравнивание внутри grid-ячейки */
+    justify-self: stretch;
+    align-self: start;
+}
+
+.cases-cover {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.cases-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    pointer-events: none;
+}
+
+.cases-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cases-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cases-title {
+    color: var(--color-white);
+    font-family: var(--font-semibold);
+    font-size: var(--font-size-h2);
+    line-height: var(--font-line-height-h2);
+    letter-spacing: var(--font-letter-spacing-medium);
+
+    height: 28px;
+}
+
+.cases-description {
+    color: var(--color-gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-additional-text);
+    line-height: var(--font-letter-spacing-additional-text);
+    letter-spacing: var(--font-letter-spacing-medium);
+}
+
+/* Планшеты и средние экраны - 2 колонки */
+@media (max-width: 1024px) {
+    .cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 32px;
+        max-width: 800px;
+    }
+    
+    .cases-page {
+        padding: 0 20px;
+    }
+}
+
+/* Мобильные устройства - 1 колонка */
+@media (max-width: 640px) {
+    .cases-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 20px 0 100px 0;
+        max-width: 400px;
+    }
+    
+    .cases-page {
+        padding: 0 16px;
+    }
+    
+    .cases-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .cases-content .primary-button {
+        align-self: center;
+    }
+
+    .cases-title {
+        height: 28px;
+    }
+}
