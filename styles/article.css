@@ -37,7 +37,7 @@ h2 {
 }
 
 .article-list p {
-    color: var(--text-color);
+    color: var(--secondary-text-color);
 }
 
 .article-list-image {

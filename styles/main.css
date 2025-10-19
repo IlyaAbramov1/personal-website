@@ -189,7 +189,7 @@ body.dark-theme .notification-popup-close-icon {
 }
 
 .notification-popup__subtitle {
-    color: var(--secondary-text-color);
+    color: var(--thirdly-text-color);
     
     text-align: left;
 }
