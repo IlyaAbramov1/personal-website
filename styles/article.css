@@ -37,7 +37,7 @@ h2 {
 }
 
 .article-list p {
-    color: var(--gray-900);
+    color: var(--text-color);
 }
 
 .article-list-image {
@@ -59,11 +59,11 @@ h2 {
     border-radius: 8px;
 
     background: var(--bg-color);
-    border: 1px solid var(--gray-200)
+    border: 1px solid var(--secondary-bg-color)
 }
 
 .article-list-image p {
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
 }
 
 /* Article Lists */
@@ -102,7 +102,7 @@ h2 {
 
 .article-list ul ul li::before {
     content: "•";
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
 }
 
 .listBlockItem-new {
@@ -120,7 +120,7 @@ h2 {
     position: relative;
     width: 100%;
     background: var(--bg-color);
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--secondary-bg-color);
     
     border-radius: 8px;
     padding: 16px;
@@ -156,7 +156,7 @@ h2 {
     width: 52px;
     height: 52px;
     background: var(--bg-color);
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--secondary-bg-color);
     border-radius: 8px;
 
     display: flex;  
@@ -198,12 +198,12 @@ h2 {
 }
 
 .copy-example-button.blur-transition:hover {
-    background-color: var(--gray-100);
+    background-color: var(--secondary-bg-color);
 }
 
 .copy-example-button.blur-transition:active {
     transform: scale(0.9);
-    background-color: var(--gray-100);
+    background-color: var(--secondary-bg-color);
 }
 
 .copy-example-button.blur-transition img {
@@ -229,7 +229,7 @@ h2 {
 
     gap: 0px;
     border-radius: 8px;
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--secondary-bg-color);
 }
 
 .list-item-smooth {
@@ -239,11 +239,11 @@ h2 {
 
     transition: background-color 0.15s ease-in;
 
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--secondary-bg-color);
 }
 
 .list-item-smooth:hover {
-    background-color: var(--gray-200);
+    background-color: var(--secondary-bg-color);
 }
 
 .list-item-smooth:last-child {
@@ -257,11 +257,11 @@ h2 {
 
     transition-duration: none;
 
-    border-bottom: 1px solid var(--gray-200)
+    border-bottom: 1px solid var(--secondary-bg-color)
 }
 
 .list-item-init:hover {
-    background-color: var(--gray-200);
+    background-color: var(--secondary-bg-color);
 }
 
 .list-item-init:last-child {
@@ -274,7 +274,7 @@ h2 {
     padding: 8px;
     border-radius: 8px;
     background-color: var(--bg-color);
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--secondary-bg-color);
     box-shadow: 0px 2px 2px rgba(0,0,0,.04);
 
     display: none;
@@ -333,7 +333,7 @@ h2 {
 }
 
 .droplist-item:hover {
-    background-color: var(--gray-100);
+    background-color: var(--secondary-bg-color);
 }
 
 .droplist-item-animation {
@@ -361,7 +361,7 @@ h2 {
     justify-content: center;
 
     padding: 8px 12px;
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--secondary-bg-color);
     background-color: var(--bg-color);
     color: var(--text-color);
     border-radius: 8px;
@@ -372,7 +372,7 @@ h2 {
 }
 
 .text-button-to-open:hover {
-    background-color: var(--gray-100);
+    background-color: var(--secondary-bg-color);
 }
 
 .text-button-to-open:active {
@@ -538,7 +538,7 @@ h2 {
     right: 8px;
 
     background: none;
-    border: 1px solid var(--gray-400);
+    border: 1px solid var(--secondary-text-color);
     border-radius: 100px;
 
     display: flex;
@@ -615,7 +615,7 @@ h2 {
     bottom: 24px;
 
     padding: 10px 14px;
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--secondary-bg-color);
     background-color: var(--bg-color);
     color: var(--text-color);
     border-radius: 8px;
@@ -660,7 +660,7 @@ h2 {
 }
 
 .button-to-trash:hover {
-    background-color: var(--gray-100);
+    background-color: var(--secondary-bg-color);
 
     transition: all 0.2s ease;
 }
@@ -691,7 +691,7 @@ h2 {
     margin: 24px 0;
     padding-left: 24px;
 
-    border-left: 2px solid var(--gray-200);
+    border-left: 2px solid var(--secondary-bg-color);
 }
 
 .quote-text {

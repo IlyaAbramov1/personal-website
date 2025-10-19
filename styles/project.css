@@ -13,7 +13,7 @@
     background: var(--bg-color);
     border-radius: 8px;
     padding: 16px;
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--secondary-bg-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     pointer-events: none;
     z-index: 10;
@@ -78,7 +78,7 @@
 .mobile-preview-info p {
     margin: 0;
     font-size: 10px;
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -102,7 +102,7 @@
 .preview-info p {
     margin: 0;
     font-size: 12px;
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
 }
 
 
@@ -142,7 +142,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
-    background-color: var(--gray-100);
+    background-color: var(--secondary-bg-color);
 
     pointer-events: none;
 }
@@ -171,7 +171,7 @@
 }
 
 .main-projects-item-subtitle {
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
 }
 
 .main-projects-item-badge {
@@ -210,7 +210,7 @@
     gap: 8px;
 
     font-size: var(--little-text-size);
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
 }
 
 .project-list {
@@ -251,7 +251,7 @@
     pointer-events: none;
 
     border-radius: 12px;
-    background-color: var(--gray-200);
+    background-color: var(--secondary-bg-color);
 }
 
 /* Media */

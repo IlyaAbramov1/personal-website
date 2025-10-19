@@ -1,19 +1,18 @@
 :root {
-    --accent-color: #1c1fff;
-    --bg-color: #FCFEFF;
-    --text-color: #1d1d1e;
-    --gray-900: hsl(240, 3%, 31%);
-    --gray-600: #aeaeb1;
-    --gray-400: #cecece;
-    --gray-200: #e4e9eb;
-    --gray-100: #f8f8f4;
+    --accent-color: #1C1FFF;
+    --text-color: #242425;
+    --secondary-text-color: #46474A;
+    --thirdly-text-color: #C8C8C8;
+    --fourthly-text-color: #CACACA;
+    --bg-color: #FFFFFF;
+    --secondary-bg-color: #F2F2F2;
     --success-bg: #a9ffba;
     --success-text: #058905;
 
     --main-text-size: 13px;
     --main-text-line-height: 165%;
     --little-text-size: 10px;
-    --text-letter-spacing: -0.1px;
+    --text-letter-spacing: -0.01em;
     --little-text-line-height: 140%;
 
     --content-width: 620px;
@@ -23,14 +22,13 @@
 }
 
 body.dark-theme {
-    --accent-color: #375cff;
-    --bg-color: #0D0D15;
-    --text-color: #f1ecec;
-    --gray-900: #b3b3bc;
-    --gray-600: #96969d;
-    --gray-400: #65656C;
-    --gray-200: #21212b;
-    --gray-100: #18181B;
+    --accent-color: #375CFF;
+    --text-color: #DCE0EA;
+    --thirdly-text-color: #616169;
+    --secondary-text-color: #46474A;
+    --fourthly-text-color: #44424C;
+    --bg-color: #13131D;
+    --secondary-bg-color: #1D1D2C;
     --success-bg: #1a4d1a;
     --success-text: #7fd67f;
 }
@@ -71,7 +69,10 @@ body {
 
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url(/fonts/JetBrainsMono-Regular.ttf);
+    src: url(/fonts/JetBrainsMono-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -87,7 +88,14 @@ body {
     font-family: 'JetBrains Mono', monospace;
 
     scrollbar-width: thin;
-    scrollbar-color: var(--gray-400) transparent;
+    scrollbar-color: var(--secondary-text-color) transparent;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+    font-variant-numeric: normal;
+    font-kerning: auto;
 }
 
 /* WebKit scrollbar styles */
@@ -100,12 +108,12 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--gray-400);
+    background-color: var(--secondary-text-color);
     border-radius: 4px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-    background-color: var(--gray-200);
+    background-color: var(--secondary-bg-color);
 }
 
 .main-content {
@@ -191,7 +199,7 @@ body {
 
 
 sup {
-    color: var(--gray-400);
+    color: var(--thirdly-text-color);
 }
 
 #wt-sky-root {
@@ -238,11 +246,11 @@ sup {
 }
 
 .header-text-subtitle {
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
 }
 
 .header-text-description {
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
 
     margin-top: 20px;
 }
@@ -255,8 +263,8 @@ sup {
     font-size: var(--main-text-size);
 
     background-color: var(--bg-color);
-    color: var(--gray-400);
-    border: 1px solid var(--gray-200);
+    color: var(--fourthly-text-color);
+    border: 1px solid var(--secondary-bg-color);
     border-radius: 4px;
     padding: 4px 8px;
 
@@ -285,7 +293,7 @@ sup {
 
     font-size: var(--little-text-size);
     line-height: var(--little-text-line-height);
-    color: var(--gray-400);
+    color: var(--secondary-text-color);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -308,7 +316,7 @@ sup {
 .list {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 32px;
 }
 
 .listItem {
@@ -370,7 +378,7 @@ sup {
 .list-subtitle {
     font-size: var(--main-text-size);
     line-height: var(--main-text-line-height);
-    color: var(--gray-400);
+    color: var(--thirdly-text-color);
     text-align: left;
 }
 
@@ -397,7 +405,7 @@ sup {
     pointer-events: none;
 
     border-radius: 12px;
-    background-color: var(--gray-200);
+    background-color: var(--secondary-bg-color);
 }
 
 /* Специальный стиль для проектов с превью */
@@ -431,7 +439,6 @@ sup {
 }
 
 .list-subtitle-left {
-    color: var(--gray-400);
     text-align: left;
 }
 
